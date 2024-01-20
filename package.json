@@ -1,9 +1,8 @@
 {
-  "name": "steep-tea",
+  "name": "monorepo",
   "version": "1.0.0",
-  "repository": "https://github.com/jtaccinelli/steep-tea.git",
-  "description": "The project containing all the pieces for the Queensland Māori Society website",
-  "main": "index.js",
+  "repository": "https://github.com/jtaccinelli/monorepo.git",
+  "description": "The project that is the template for all future Lerna based monorepo projects.",
   "author": "Jordan <jtaccinelli@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
@@ -16,13 +15,11 @@
   "scripts": {
     "build": "lerna run build",
     "dev": "lerna run dev",
-    "dev:site": "lerna run dev --scope=@steep-tea/site",
-    "dev:studio": "lerna run dev --scope=@steep-tea/studio"
+    "dev:app": "lerna run dev --scope=@monorepo/app"
   },
   "devDependencies": {
     "lerna": "^7.1.5",
-    "prettier": "^3.0.2",
-    "prettier-plugin-tailwindcss": "^0.5.3"
+    "prettier": "^3.0.2"
   },
   "prettier": {
     "trailingComma": "es5",
