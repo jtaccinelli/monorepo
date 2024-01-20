@@ -1,0 +1,32 @@
+{
+  "name": "steep-tea",
+  "version": "1.0.0",
+  "repository": "https://github.com/jtaccinelli/steep-tea.git",
+  "description": "The project containing all the pieces for the Queensland Māori Society website",
+  "main": "index.js",
+  "author": "Jordan <jtaccinelli@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "dev": "lerna run dev",
+    "dev:site": "lerna run dev --scope=@steep-tea/site",
+    "dev:studio": "lerna run dev --scope=@steep-tea/studio"
+  },
+  "devDependencies": {
+    "lerna": "^7.1.5",
+    "prettier": "^3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true
+  }
+}

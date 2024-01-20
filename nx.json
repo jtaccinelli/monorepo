@@ -1,0 +1,21 @@
+{
+    "tasksRunnerOptions": {
+      "default": {
+        "runner": "nx/tasks-runners/default",
+        "options": {
+          "parallel": 3
+        }
+      }
+    },
+    "targetDefaults": {
+      "build": {
+        "dependsOn": ["^build"]
+      },
+      "dev": {
+        "dependsOn": ["^build"]
+      },
+      "deploy": {
+        "dependsOn": ["^build"]
+      }
+    }
+  }
