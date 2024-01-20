@@ -1,0 +1,14 @@
+{
+    "name": "@monorepo/app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "lerna": "lerna run build --scope=@monorepo/app",
+      "lerna:dev": "lerna run dev --scope=@monorepo/app"
+    },
+    "dependencies": {
+      "@monorepo/package": "*",
+      "eslint": "8.48.0",
+      "typescript": "5.2.2"
+    }
+  }
